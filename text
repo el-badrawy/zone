@@ -1,0 +1,459 @@
+index.html وده الصفحه الى الموقع هيفتح عليها و يكون معروض عليها الهودي فقط 
+
+ <!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hoode Zoon</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+   <body>
+    <div class="continer">
+        <h1>Zone</h1>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الهوديز</a></li>
+<li><a href="pants.html">البناطيل</a></li>
+<li><a href="tshirt.html">التيشرتات</a></li>
+
+    <li><a href="cart.html">السلة 🛒 (<span id="count">0</span>)</a></li>
+  
+                </ul>
+            </nav>
+        </header>
+
+        <div class="products" id="products"></div>
+        <div class="customerService">
+            <h3 class="word">خدمة العملاء</h3>
+            <ul >
+                <li> <a href="#" target="_blank"><i class="fab fa-whatsapp"></i> watsapp</li>
+                <li> <a href="mailto: hossamebedro@gmail.com" target="_blank"><i class="fas fa-envelope"></i>Gmail</a></li>
+            </ul>
+<footer>
+  <p>© 2026  Zoon - جميع الحقوق محفوظة</p>
+
+  <div class="links">
+      <a href="#">من نحن</a>
+      <a href="#">سياسة الخصوصية</a>
+      <a href="#">الشروط</a>
+    </div>
+    
+    <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+    
+    <p>📞 01024676572</p>
+    <p>📞 01024676572</p>
+    <p >📍دسوق - كفرالشيخ - مصر </p>
+</footer>
+</div>
+<script src="./script.js"></script>
+<script src="hoodies.js"></script>
+</div>
+</body>
+</html> 
+
+-------------------------------------------------------------------------------------
+pants.html 
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>بناطيل</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<h1>بناطيل</h1>
+
+<nav>
+  <ul>
+    <li><a href="index.html">هوديز</a></li>
+    <li><a href="pants.html">بناطيل</a></li>
+    <li><a href="tshirt.html">تيشرتات</a></li>
+    <li><a href="cart.html">السلة 🛒 (<span id="count">0</span>)</a></li>
+  </ul>
+</nav>
+
+<div id="products" class="products"></div>
+
+<script src="pants.js"></script>
+</body>
+</html>
+----------------------------------------------------------------------------------
+tshirt.html 
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>تيشرتات</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<h1>تيشرتات</h1>
+
+<nav>
+  <ul>
+    <li><a href="index.html">هوديز</a></li>
+    <li><a href="pants.html">بناطيل</a></li>
+    <li><a href="tshirt.html">تيشرتات</a></li>
+    <li><a href="cart.html">السلة 🛒 (<span id="count">0</span>)</a></li>
+  </ul>
+</nav>
+
+<div id="products" class="products"></div>
+<script src="tshirt.js"></script>
+</body>
+</html>
+-----------------------------------------------------------------------------------------------
+cart.html 
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>السلة</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<h1>🛒 السلة</h1>
+
+<div id="cart"></div>
+<h2 id="total"></h2>
+
+<script src="cart.js"></script>
+</body>
+</html>
+----------------------------------------------------------------------
+script.js هو ده بتاع الصفحه الاساسيه 
+const products = [
+  {
+    name: "هودي أسود",
+    price: 300,
+    hofer: 200,
+    img: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b",
+  },
+  {
+    name: "هودي أسود",
+    price: 300,
+    hofer: 200,
+    img: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b",
+  },
+  {
+    name: "هودي أسود",
+    price: 300,
+    hofer: 200,
+    img: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b",
+  },
+  {
+    name: "هودي أسود",
+    price: 300,
+    hofer: 200,
+    img: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b",
+  },
+  {
+    name: "هودي أبيض",
+    price: 320,
+    img: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b",
+  },
+  {
+    name: "هودي رمادي",
+    price: 280,
+    img: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b",
+  },
+  {
+    name: "هودي أزرق",
+    price: 350,
+    img: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b",
+  },
+  {
+    name: "هودي أحمر",
+    price: 310,
+    img: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b",
+  },
+  {
+    name: "هودي أخضر",
+    price: 290,
+ img: "https://images.unsplash.com/photo-1544441893-675973e31985",  },
+  {
+    name: "هودي بني",
+    price: 330,
+    img: "https://images.unsplash.com/photo-1544441893-675973e31985",
+  },
+  {
+    name: "هودي أصفر",
+    price: 360,
+ img: "https://images.unsplash.com/photo-1544441893-675973e31985",  },
+  {
+    name: "هودي موف",
+    price: 300,
+ img: "https://images.unsplash.com/photo-1544441893-675973e31985",  },
+  {
+    name: "هودي كحلي",
+    price: 340,
+ img: "https://images.unsplash.com/photo-1544441893-675973e31985",  },
+  {
+    name: "هودي كحلي",
+    price: 340,
+ img: "https://images.unsplash.com/photo-1544441893-675973e31985",  },
+  {
+    name: "هودي كحلي",
+    price: 340,
+ img: "https://images.unsplash.com/photo-1544441893-675973e31985",  },
+  {
+    name: "هودي كحلي",
+    price: 340,
+ img: "https://images.unsplash.com/photo-1544441893-675973e31985",  },
+  {
+    name: "هودي كحلي",
+    price: 340,
+ img: "https://images.unsplash.com/photo-1544441893-675973e31985",  },
+];
+const container = document.getElementById("products");
+products.forEach((p, i) => {
+  container.innerHTML += `
+    <div class="card">
+      <img src="${p.img}">
+      <h3>${p.name}</h3>
+      <del>${p.hofer}جنيه</del>
+      <p>${p.price} جنيه</p>
+
+      <select id="size${i}">
+        <option value="">المقاس</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+      </select>
+
+      <select id="color${i}">
+        <option value="">اللون</option>
+        <option>أسود</option>
+        <option>أبيض</option>
+        <option>رمادي</option>
+      </select>
+
+      <button onclick="addToCart(${i})">اضف للسلة</button>
+    </div>
+  `;
+});
+
+
+
+
+function addToCart(index) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  let product = products[index];
+
+  cart.push(product);
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  alert("تم إضافة المنتج للسلة 🛒");
+}
+
+-------------------------------------------------------------------------------------
+pants.js 
+const products = [
+  {
+    name: "بنطلون جينز",
+    price: 400,
+    img: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246"
+  },
+  {
+    name: "بنطلون قماش",
+    price: 350,
+    img: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246"
+  }
+];
+
+const container = document.getElementById("products");
+products.forEach((p, i) => {
+  container.innerHTML += `
+    <div class="card">
+      <img src="${p.img}">
+      <h3>${p.name}</h3>
+      <del>${p.hofer}جنيه</del>
+      <p>${p.price} جنيه</p>
+
+      <select id="size${i}">
+        <option value="">المقاس</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+      </select>
+
+      <select id="color${i}">
+        <option value="">اللون</option>
+        <option>أسود</option>
+        <option>أبيض</option>
+        <option>رمادي</option>
+      </select>
+
+      <button onclick="addToCart(${i})">اضف للسلة</button>
+    </div>
+  `;
+});
+
+
+
+function addToCart(index) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.push(products[index]);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert("تم الإضافة 🛒");
+}
+---------------------------------------------------------------------------------------------
+tshirt.js 
+const products = [
+  {
+    name: "تيشيرت أبيض",
+    price: 150,
+    img: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+  },
+  {
+    name: "تيشيرت أبيض",
+    price: 150,
+    img: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+  },
+  {
+    name: "تيشيرت أبيض",
+    price: 150,
+    img: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+  }
+];
+
+const container = document.getElementById("products");
+products.forEach((p, i) => {
+  container.innerHTML += `
+    <div class="card">
+      <img src="${p.img}">
+      <h3>${p.name}</h3>
+      <del>${p.hofer}جنيه</del>
+      <p>${p.price} جنيه</p>
+
+      <select id="size${i}">
+        <option value="">المقاس</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+      </select>
+
+      <select id="color${i}">
+        <option value="">اللون</option>
+        <option>أسود</option>
+        <option>أبيض</option>
+        <option>رمادي</option>
+      </select>
+
+      <button onclick="addToCart(${i})">اضف للسلة</button>
+    </div>
+  `;
+});
+
+
+
+function addToCart(index) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.push(products[index]);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert("تم الإضافة 🛒");
+}
+--------------------------------------------------------------------------------------------
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let container = document.getElementById("cart");
+let total = 0;
+
+// عرض المنتجات
+cart.forEach((p, i) => {
+  total += p.price;
+
+  container.innerHTML += `
+    <div class="card">
+      <h3>${p.name}</h3>
+      <p>${p.price} جنيه</p>
+      <p>${p.size || ""} - ${p.color || ""}</p>
+      <button onclick="removeItem(${i})">حذف ❌</button>
+    </div>
+  `;
+});
+
+// عرض الإجمالي
+document.getElementById("total").innerText = "الإجمالي: " + total + " جنيه";
+
+// حذف منتج
+function removeItem(i) {
+  cart.splice(i, 1);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  location.reload();
+}
+------------------------------------------------------
+hoodies.js 
+const products = [
+  {
+    name: "هودي أسود",
+    price: 300,
+    hofer: 200,
+    img: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b",
+  }
+];
+
+const container = document.getElementById("products");
+
+products.forEach((p, i) => {
+  container.innerHTML += `
+    <div class="card">
+      <img src="${p.img}">
+      <h3>${p.name}</h3>
+
+      ${p.hofer ? `<del>${p.hofer} جنيه</del>` : ""}
+
+      <p>${p.price} جنيه</p>
+
+      <select id="size${i}">
+        <option value="">المقاس</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+      </select>
+
+      <select id="color${i}">
+        <option value="">اللون</option>
+        <option>أسود</option>
+        <option>أبيض</option>
+        <option>رمادي</option>
+      </select>
+
+      <button onclick="addToCart(${i})">اضف للسلة</button>
+    </div>
+  `;
+});
+
+function addToCart(i) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  let size = document.getElementById(`size${i}`).value;
+  let color = document.getElementById(`color${i}`).value;
+
+  cart.push({ ...products[i], size, color });
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert("تم الإضافة 🛒");
+}
+
+
+
+
+
+عايز العميل يختار المقاس و اللون اجباري 
+و فى مشكله عداد السله مش بيزيد الا لما اعمل اكشن فى الصفحه 
