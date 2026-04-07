@@ -97,14 +97,13 @@ nav ul li img {
 /*السله*/
 .cart {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
   justify-content: center;
 }
 .cart .card img {
-  width: 100px;
-  height: 100px;
+  width: 100%;
   border: var(--main-color);
 }
 #total {
